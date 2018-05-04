@@ -48,6 +48,7 @@ class ResPartner(models.Model):
             self.zip = self.zip_id.name
             self.state_id = self.zip_id.state_id
             self.city = self.zip_id.city
+            self.zip_id = False
 
     @api.constrains('zip_id', 'country_id', 'city_id', 'state_id')
     def _check_zip(self):

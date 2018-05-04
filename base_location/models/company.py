@@ -62,3 +62,4 @@ class ResCompany(models.Model):
                 self.state_id = self.city_id.state_id
             else:
                 self.state_id = self.zip_id.state_id
+            self.zip_id = False

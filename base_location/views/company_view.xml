@@ -13,14 +13,14 @@
                     colspan="4"
                     placeholder="City completion" />
             </field>
-            <field name="city" position="after">
-                <field name="country_enforce_cities" invisible="1"/>
-                <field name='city_id'
-                    attrs="{'invisible': [('country_enforce_cities', '=', False)]}"/>
-            </field>
-            <field name="city" position="attributes">
-                <attribute name="invisible">[('country_enforce_cities', '=', True)]</attribute>
-            </field>
+            <!--<field name="city" position="after">-->
+                <!--<field name="country_enforce_cities" invisible="1"/>-->
+                <!--<field name='city_id'-->
+                    <!--attrs="{'invisible': [('country_enforce_cities', '=', False)]}"/>-->
+            <!--</field>-->
+            <!--<field name="city" position="attributes">-->
+                <!--<attribute name="invisible">[('country_enforce_cities', '=', True)]</attribute>-->
+            <!--</field>-->
         </field>
     </record>
 
